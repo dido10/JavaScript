@@ -59,3 +59,17 @@
 
 </body>
 </html>
+-------------------
+<script>
+        var a = ["elma", "üzüm", "kayısı"];
+        var b = [100,45,18,79,43];
+        a.reverse();
+        b.sort(function (x, y) {
+            return x - y
+
+        });/*sıralama için kullanılır eğer x-y - eksi bir rakamsa y x in önüne geçer harici durumda aynı kalır*/
+        /*büyükten küçüğe içiny-x, x-y küçükten büyüğe sıralar*/
+        document.write(a);
+        document.write(b);/*b.sort(); alfabetik sıralama 100,18,43,45,79  */
+
+    </script>
