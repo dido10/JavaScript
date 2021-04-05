@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <!--<link href="StyleSheet.css" rel="stylesheet" type="text/css" />css dosya bağlantısı-->
+    <title>DD</title>
+    <!--<link href="indir.ico" rel="shortcut icon" />-->
+    <script src="https://kit.fontawesome.com/2dffc195b4.js" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.slim.min.js"
+            integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI="
+            crossorigin="anonymous"></script>
+    </head>
+<body>
+    <div id="div1"></div>
+    <div id="div2"></div>
+    <script>
+        var a = ["üzüm", "elma", "kayısı", "karpuz"];
+        var f = [{ marka: "audi", kapisayisi: "2", yili: 2019 },
+            { marka: "honda", kapisayisi: "4", yili: 2012 },
+            { marka: "volkwagen", kapisayisi: "4", yili: 2014 }]; 
+        //a.sort();
+
+
+        //document.getElementById("div1").innerHTML = a + "<br><br>";
+        //a.reverse();
+        
+        //document.write(a);
+
+        function arabalar() {
+
+            document.getElementById("div1").innerHTML =
+                f[0].marka + " " + f[0].yili +  "<br>" +
+                f[1].marka + " " + f[1].yili + "<br>" +
+                f[2].marka + " " + f[2].yili + "<br>" ;
+        }
+        /**/
+
+        function sirala() {
+            c.sort(function (a, b) {return b.yili-a.yili });
+            arabalar();
+        }
+        arabalar();
+        sirala();
+        
+        //var b = [56, 83, 1, 5, 47, 8, 63, 55];
+        //b.sort(function (x, y) {
+        //    return x-y
+        //});
+        //document.getElementById("div2").innerHTML = b + "<br><br>";
+
+        //var c = b[0];/*b nin en küçük değeri*/
+        //var d = b[b.length-1];/*b nin en büyük saysıı*/
+
+
+
+    </script>
+
+
+</body>
+</html>
