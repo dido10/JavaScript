@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <!--<link href="StyleSheet.css" rel="stylesheet" type="text/css" />css dosya bağlantısı-->
+    <title>DD</title>
+    <!--<link href="indir.ico" rel="shortcut icon" />-->
+    <script src="https://kit.fontawesome.com/2dffc195b4.js" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.slim.min.js"
+            integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI="
+            crossorigin="anonymous"></script>
+    <!-- this way orrr<script>
+        document.write("hello site");
+        </script>-->
+    <!--this wayorrrr<script src="JavaScript.js"></script>-->
+    <!--head içinde yazılan js kodları ekran açılışlarını yavaşlatır.-->
+</head>
+<body>
+    <h1>
+        JavaScript
+    </h1>
+    <div id="div1">java java jaava must be funny</div>
+
+    <script>
+        document.getElementById("div1").innerHTML = "<b>hoş bulduk</b>";
+        document.getElementById("div1").innerHTML = "<b><i>hoş bulduk</i></b>";
+    </script>
+    <!--<script>
+        document.write("java script öğreniyorum");
+    </script>--><!--boşalana yerleşir-->
+    <!--<script>
+        /*console.log(10+15);*/
+        window.alert("hoşgeldiniz");
+
+    </script>
+    <script>
+          window.print("xxxxx");/*printle yazdrma*/
+   </script>-->
+    <!--<script>
+        document.write("hello site");
+    </script>-->
+    <!--<script src="JavaScript.js"></script>  this way-->
+</body>
+</html>
+-------------
+ <script>
+        
+        ///*number, array, string boolean, object*/
+        var sayi = 10;
+        //var isim = "DİDEM";
+        //var obje = {ad: "sunay", soyad: "axyz",dtarih:"2000"};/*objects*/
+        //document.write(obje);/* hata [object Object]*/
+        //document.write(obje.ad);
+        //document.write(obje[ad]);/*==document.write(obje.ad);*/
+        ///*alert(isim);*/
+        //document.write(sayi + " " + isim);
+        //var a = "5" + 2 + 3;/*523 */
+        //var b = 2 + 3 + "5";/*55 */
+        //document.write(a + b);
+        //document.write(10 == 11);
+        //document.write(10 == 10);   
+        var meyve = ["Elma", "muz", "armut"];
+        document.write(meyve[0]);
+        document.write(typeof meyve);
+        //const sayi = 10;/* sabittir değiştirilemez*/
+        ///*sayi = 15;*/
+        //document.write(sayi);
+
+        var d = 6;
+        var c = 4;
+        d++;/*d=7*/
+        d *= c;/*d*c=d*/
+        document.write(d % c);/*kalanı verir*/
+    </script>
+    
+</body>
+</html>
+----------------------------
+<body>
+    <script>
+        //function fonksiyonAdi(isim){
+        ///*document.write("hoşgeldiniz..");*/
+        //    return isim;
+        //}
+        ///*fonksiyonAdi();*/
+        //document.write(fonksiyonAdi("didem"));
+        //var cumle = "javascript dersinde ";
+        //var s = cumle.slice(8);/* pt dersinde */
+        //var f = cumle.slice(8, -7);/*pt de */
+        //var t = cumle.substring(8, 3);/*ascri --> 8.karakterden soonra 3 harf göster*/
+        //document.write(t);
+        //var x = "a,b,c,f,e,s,p";
+        //var test = x.split(",");
+        //document.write(test[0]);
+        var meyve = ["elma", "armut"];
+        var y = meyve.push("kayısı");
+        var y = meyve.pop();/*son  elamanı alır y ye eşitler*//*shift ilk elemanı çıkarır,slice (x,y)x dahil y dahil değil aradakileri getirir*/
+        /*splice (x,y,"t") x. sıraya git y=0 sa silme,y> y. sıradakini sil. işlem sonucu direk ekrana yazdır değişkene atama*/
+        /*concat iki arrayi birleştirir*/
+        document.write(y);
+        document.write(meyve);
+    </script>
+    
