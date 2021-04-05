@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <!--<link href="StyleSheet.css" rel="stylesheet" type="text/css" />css dosya bağlantısı-->
+    <title>DD</title>
+    <!--<link href="indir.ico" rel="shortcut icon" />-->
+    <script src="https://kit.fontawesome.com/2dffc195b4.js" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.slim.min.js"
+            integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI="
+            crossorigin="anonymous"></script>
+    </head>
+<body>
+    <div id="div1"></div>
+    <script>
+        var sayi = [45, 56, 78, 25, 14, 69, 4];
+     
+        /*document.write(sayi);*/
+        var yazi = "";
+        
+        function yazdir(value, index, array){
+            yazi = yazi + value+"<br>";
+        }
+        sayi.forEach(yazdir);
+        document.getElementById("div1").innerHTML = yazi;
+    </script>
+</body>
+</html>
+----------------------
+<script>
+        var sayi = [45, 56, 78, 25, 14, 69, 4];
+     
+        /*document.write(sayi);*/
+        var yazi = "";
+
+        function ucilecarp(value,index,array) {
+            return value * 3;
+        }
+        var sayi2 = sayi.map(ucilecarp);
+
+        document.getElementById("div1").innerHTML = sayi2;
+    </script>
+    ---------------------
+    <script>
+        var sayi = [45, 56, 78, 25, 14, 69, 4];
+     
+        /*document.write(sayi);*/
+        var yazi = "";
+
+        function deneme(value,index,array) {
+            return value >30;
+        }
+        var sayi2 = sayi.filter(deneme);
+
+        document.getElementById("div1").innerHTML = sayi2;
+    </script>
+    ----------------
+    
+    
+    <script>
+        var sayi = [45, 56, 78, 25, 14, 69, 4];
+     
+        /*document.write(sayi);*/
+        var yazi = "";
+
+        function deneme(total, value,index,array) {
+            return total+value;/*her bir değeri dönüp totale eşitler*/
+        }
+        var sayi2 = sayi.reduce(deneme);
+
+        document.getElementById("div1").innerHTML = sayi2;
+    </script>
