@@ -32,3 +32,16 @@
     </script>
 </body>
 </html>
+----------------
+  <script>
+        //var a = ["elma", "armut", "kiraz"];
+        var a =1;
+        function kontrol(x) {
+
+            return x.constructor.toString().indexOf("Array") > -1;
+
+        }/*kontrol amaçlı, array mı değil mi kontrol eder*/
+
+        var b=kontrol(a);
+        document.write(b);
+    </script>
