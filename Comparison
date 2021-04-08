@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <!--<link href="StyleSheet.css" rel="stylesheet" type="text/css" />css dosya bağlantısı-->
+    <title>DD</title>
+    <!--<link href="indir.ico" rel="shortcut icon" />-->
+    <script src="https://kit.fontawesome.com/2dffc195b4.js" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.slim.min.js"
+            integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI="
+            crossorigin="anonymous"></script>
+    </head>
+<body>
+    <div id="div1"></div>
+    <script>
+        var a = 10;
+        var b = "10";
+        //var d = (a != b);
+        //var c = (a == b);/* == içerik sorgular === hem değişken içerik hem tür*/
+
+        var d = 100;
+        var c = 8;
+        var t = (a <= b) && (c < d);
+        var z = (a < b) || !(d < c)
+        document.write(t);
+        document.write(z);
+    </script>
+</body>
+</html>
