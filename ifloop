@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <!--<link href="StyleSheet.css" rel="stylesheet" type="text/css" />css dosya bağlantısı-->
+    <title>DD</title>
+    <!--<link href="indir.ico" rel="shortcut icon" />-->
+    <script src="https://kit.fontawesome.com/2dffc195b4.js" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.slim.min.js"
+            integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI="
+            crossorigin="anonymous"></script>
+    </head>
+<body>
+    <div id="div1"></div>
+    <script>
+        //var x = 3;
+        //var y = 3;
+       
+        //if (y < tx) {
+        //    document.write("X yden büyüktür");
+        //}
+        //else if (x = y) {
+        //    document.write("X yye eşittir");
+        //}
+        //else {
+        //    document.write("X yden Küçüktür");
+        //}
+        var t = window.prompt("lütfen yaşınızı giriniz", 0);
+        document.write(t+" yaşındasınız")
+    </script>
+</body>
+</html>
+-----------------------------
+<script>
+        var yas = prompt("yaşınızı giriniz", 0);
+        var girisizni = (yas<18)?"Giriş yasak":"Geçiniz";
+        document.write(girisizni);
+    </script>
