@@ -34,3 +34,19 @@
     </script>
 </body>
 </html>
+-------------------
+<script>
+        var yazi = "";
+
+        for (i = 0; i < 10; i++)
+        {
+           
+
+            if (i == 5) {
+            /* break;*/
+                continue;
+            }
+            yazi += "Sayı:  " + i + "<br>";
+        }
+        document.getElementById("div1").innerHTML = yazi;
+    </script>
