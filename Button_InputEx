@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <!--<link href="StyleSheet.css" rel="stylesheet" type="text/css" />css dosya bağlantısı-->
+    <title>DD</title>
+    <!--<link href="indir.ico" rel="shortcut icon" />-->
+    <script src="https://kit.fontawesome.com/2dffc195b4.js" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.slim.min.js"
+            integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI="
+            crossorigin="anonymous"></script>
+    <style>
+        #div1{
+            height:80px;
+            width:100%;
+            background-color:blue;
+        }
+        #div2 {
+            height: 80px;
+            width: 100%;
+            background-color: yellow;
+        }
+        #div3 {
+            height: 80px;
+            width: 100%;
+            background-color: green;
+        }
+        #div4 {
+            height: 80px;
+            width: 100%;
+            background-color: pink;
+        }
+      /*  p{
+            color:rebeccapurple;
+            font-size:2opx;
+        }*/
+    </style>
+    </head>
+<body>
+    <div id="div1"></div>
+
+    <!--<button id="button1">Tıkla</button>-->
+    <!--<button onclick="alert('butona tıklayınız')" id="button1">Tıkla</button>-->
+    <!--<button ondblclick="alert('butona tıklayınız')" id="button1">Tıkla</button>-->
+    <!--<button onclick="document.getElementById('div1').innerHTML='Butona tıklandı'" id="button1">Tıkla</button>-->
+    <!--<button onclick="document.getElementById('div1').innerHTML='Butona tıklandı'" id="button1">Tıkla</button>-->
+    <!--<input onchange="alert('Metin değişti')" id="Text1" type="text" value="" />
+    <input onfocus="isim()" onblur="isim2()" id="Text1" type="text" value="" />-->
+    <!--input onkeypress="isim()" id="Text1" type="text" value="" />-->
+    <!--<input onkeyup="alert('yazı yazıldı')" id="Text1" type="text" value="" />-->
+    <!--<input onkeydown="alert('yazı yazıldı')"  id="Text1" type="text" value="" />-->
+    <input onmousemove="isim()"  onmouseout="isim3()" id="Text1" type="text" value="" />
+    
+
+    <button onclick="tiklamaIslemi()" id="button1">Tıkla</button>
+    <!--onkeyup/onkeydown arasındaki- onkeyup fark tuşa basıldığında önce yazar sonra uyarı,
+        onkeydown da önce uyarı sonra yazıyı yazar. -->
+
+    <script>
+        function tiklamaIslemi() {
+            /*alert("butona Tıklandı");*/
+            document.getElementById("div1").innerHTML = "Butona tıklandı";
+        }
+        function isim() {
+            /* document.getElementById("Text1").innerHTML = "Odaklandı";*/
+            document.getElementById("Text1").style.width = "150px";
+            document.getElementById("Text1").style.height = "200px";
+            document.getElementById("Text1").style.background = "green";
+        }
+        function isim2() {
+            document.getElementById("div1").innerHTML = "metinden çıkıldı.";
+        }
+
+        function isim3() {
+           
+            document.getElementById("Text1").style.width = "80px";
+            document.getElementById("Text1").style.height = "20px";
+            document.getElementById("Text1").style.background = "none";
+           
+        }
+    </script>
+
+</body>
+</html>
