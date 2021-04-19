@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <!--<link href="StyleSheet.css" rel="stylesheet" type="text/css" />css dosya bağlantısı-->
+    <title>DD</title>
+    <!--<link href="indir.ico" rel="shortcut icon" />-->
+    <script src="https://kit.fontawesome.com/2dffc195b4.js" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.slim.min.js"
+            integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI="
+            crossorigin="anonymous"></script>
+    <style>
+        #div1{
+            height:80px;
+            width:100%;
+            background-color:blue;
+        }
+        #div2 {
+            height: 80px;
+            width: 100%;
+            background-color: yellow;
+        }
+        #div3 {
+            height: 80px;
+            width: 100%;
+            background-color: green;
+        }
+        #div4 {
+            height: 80px;
+            width: 100%;
+            background-color: pink;
+        }
+    </style>
+    </head>
+<body>
+    <div id="div1" class="class1"></div>
+    <div id="div2" class="class1"></div>
+    <div id="div3" class="class1" name="name1"></div>
+    <div id="div4" class="class1"></div>
+    <script>
+        //document.getElementById("div1").innerHTML = "java script";
+        //document.getElementsByClassName("class1")[2].innerHTML = "java script";//class seçildiğinde hangi class olduğu belirtilmeli.
+        //document.getElementsByTagName("div")[3].innerHTML = "java script";//html elementy isimleri ile ulaşılıyor.yine de index verilmeli
+        //document.getElementsByName("name1")[0].innerHTML = "java script";
+
+        //document.querySelectorAll("div")[2].innerHTML = "java script";
+        //document.querySelectorAll(".class1")[0].innerHTML = "java script";
+
+        //document.getElementById("div1").id = "div5";
+        document.getElementById("div1").id = "div2";
+    </script>
+</body>
+</html>
+----------------------------------
+    <script>
+
+       // document.getElementById("div1").innerHTML = "java script";
+        //var a = document.getElementById("div1").innerHTML;
+       // document.getElementById("div4").innerHTML=a;
+        //document.getElementById("div1").innerHTML = "<p>hhjavascript</p>";
+        //document.getElementById("div1").remove();
+    </script>
