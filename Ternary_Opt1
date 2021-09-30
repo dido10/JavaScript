@@ -1,0 +1,9 @@
+
+
+let user=prompt.("kullanıcı adını giriniz");
+let info=document.queryselector("#info");
+
+//eğer kullanıcı adı 0 dan uzunsa, user getir, yoksa ya da 0 ise kullanıcı adı girilmedi şeklinde dön
+info.innerHTML= `${user.lenght>0?user:"kullanıcı adı girilmedi."}$`
+//bu şekilde de yazılabilir. user varsa user dön yoksa bildirim dön
+info.innerHTML= `${user?user:"kullanıcı adı girilmedi."}$`
