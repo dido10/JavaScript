@@ -1,0 +1,9 @@
+function getSecondLargest(nums) {
+    // Complete the function
+ //array kopyala ve yeni newset array olustur.
+    const Yeniarr=Array.from(new Set(nums));
+//array tersi al
+const ters=Yeniarr.sort(function(a,b){return b-a;})
+//ikinci buyuk getir
+    return ters[1];
+}
