@@ -7,3 +7,9 @@ const ters=Yeniarr.sort(function(a,b){return b-a;})
 //ikinci buyuk getir
     return ters[1];
 }
+
+ikinci yol
+
+function getSecondLargest(nums) {
+    // Complete the function
+return Array.from(new Set(nums)).sort(function(a, b){return b - a})[1]}
